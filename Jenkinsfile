@@ -8,8 +8,8 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn clean install'
+                withMaven(maven: 'Maven_Home') {
+                    bat 'mvn clean install'
 
                 }
 
@@ -19,8 +19,8 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn test'
+                withMaven(maven: 'Maven_Home') {
+                    bat 'mvn test'
 
                 }
 
